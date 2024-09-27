@@ -4,16 +4,6 @@ from flask import Flask
 
 app = Flask(__name__)
 
-# Bad Pratice1 - passwords
-username = refael1
-password = "2beORNOTtoBe1234"
-
-# Bad Pratice2 - keys
-# Hardcoded AWS credentials (for demonstration purposes only)
-aws_access_key_id = 'AKIAABCDCFGIJKLMMOP1'
-aws_secret_access_key = 'tQtSwrrh+N3zqFDPEPZ95050c+GGQs+Xx1AF/wVc'
-region_name = 'us-west-2'
-
 @app.route("/")
 def hello_world():
     """Example Hello World route."""
