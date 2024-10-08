@@ -9,7 +9,7 @@ jobs:
     executor: python/default
     steps:
       - checkout
-      - python/dist
+    #  - python/dist
       - run: pip install - requirements.txt
 workflows:
   build-and-test:
