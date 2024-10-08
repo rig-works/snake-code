@@ -10,7 +10,7 @@ jobs:
     steps:
       - checkout
     #  - python/dist
-      - run: pip install - requirements.txt
+      - run: pip install -r requirements.txt
 workflows:
   build-and-test:
     jobs:
