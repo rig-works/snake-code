@@ -2,25 +2,15 @@
 # Stacks detected: cicd:github-actions:.github/workflows,cicd:gitlab-workflows:.,deps:node:.,test:jest:
 version: 2.1
 orbs:
-  node: circleci/python@2.0.3
+  python: circleci/python@2.1.1
 jobs:
   test-node:
     # Install node dependencies and run tests
     executor: python/default
     steps:
       - checkout
-      - python/install-packages:
-          pkg-manager: pip
-      - run:
-          command: npm install jest-junit
-      - run:
-          name: Run tests
-          command: python -m pytest
-      - persist_to_workspace:
-          root: ~/project
-          paths:
-            - .
-workflows:
+      - python/dist
+      - run: pip install - requirements.txt
   build-and-test:
     jobs:
       - test-node
