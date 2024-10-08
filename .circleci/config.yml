@@ -11,6 +11,7 @@ jobs:
       - checkout
       - python/dist
       - run: pip install - requirements.txt
+workflows:
   build-and-test:
     jobs:
       - test-node
