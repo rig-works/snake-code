@@ -20,3 +20,12 @@ if __name__ == "__main__":
 
 # aws_secret_access_key = 'tQtSurrh+N3zqFDPEPZ95050c+GGQs+Xx1AF/wVc' 
 # api_token=glpat-e31Y_mAqvRTbZBXTZyFf 
+
+
+
+# #Bad Pratice1 - passwords 
+# username = user_refael 
+# password = "TobeOR!=toBe123" 
+
+# aws_secret_access_key = 'tQtSurrh+N3zqFDPEPZ95050c+GGQs+Xx1AF/wVc' 
+# api_token=glpat-e31Y_mAqvRTbZBXTZyFf 
